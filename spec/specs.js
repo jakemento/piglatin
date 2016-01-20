@@ -18,6 +18,18 @@ describe('addAy', function(){
   });
 });
 
+describe('moveCons', function(){
+  it("moves all of the first consecutive consonants to the end and adds ay to the new word", function(){
+    expect(moveCons("bring")).to.equal("ingbray")
+  });
+});
+
+describe('addAy3', function(){
+  it("add cons and u to the end of a word", function(){
+    expect(addAy3("quiet")).to.equal("ietquay")
+  });
+});
+
 // describe('isCons', function(){
 //   it("starts with a consonant", function(){
 //     expect(isCons("bear")).to.equal("earbay")

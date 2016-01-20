@@ -12,6 +12,12 @@ describe('isCons', function(){
   });
 });
 
+describe('addAy', function(){
+  it("adds ay to words that start with a vowel", function(){
+    expect(addAy("eagle")).to.equal("eagleay")
+  });
+});
+
 // describe('isCons', function(){
 //   it("starts with a consonant", function(){
 //     expect(isCons("bear")).to.equal("earbay")
